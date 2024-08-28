@@ -1,25 +1,21 @@
+import 'package:ezway_flutter_app/components/logo/logo.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
-const String assetName = 'assets/ezway-logo.svg';
-final Widget ezwayLogo =
-    SvgPicture.asset(assetName, semanticsLabel: 'Acme Logo');
 
 class Header extends StatelessWidget {
   const Header({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(22),
+    return const Padding(
+      padding: EdgeInsets.all(18),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[ezwayLogo],
+            children: <Widget>[EzwayLogo()],
           ),
-          const Icon(
+          Icon(
             Icons.settings,
             size: 42,
           )

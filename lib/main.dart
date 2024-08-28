@@ -1,4 +1,4 @@
-import 'package:ezway_flutter_app/screens/home.dart';
+import 'package:ezway_flutter_app/screens/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +12,7 @@ class EzWay extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'EzWay',
-      home: Home(),
+      home: Login(),
     );
   }
 }
